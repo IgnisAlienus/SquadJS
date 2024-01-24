@@ -20,6 +20,7 @@
   },
   "type": "module",
   "dependencies": {
+    "discord.js": "^14.14.1",
     "squad-server": "1.0.0"
   },
   "devDependencies": {
