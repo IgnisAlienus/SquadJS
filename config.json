@@ -1,6 +1,7 @@
 {
   "server": {
     "id": 1,
+    "serverName": "Server Name",
     "host": "xxx.xxx.xxx.xxx",
     "queryPort": 27165,
     "rconPort": 21114,
@@ -21,7 +22,11 @@
     ]
   },
   "connectors": {
-    "discord": "Discord Login Token",
+    "discord": {
+      "token": "Discord Login Token",
+      "guildID": "Discord Guild ID",
+      "clientID": "Discord Client ID"
+    },
     "awnAPI": {
       "orgID": "YourOrgID",
       "creds": {
