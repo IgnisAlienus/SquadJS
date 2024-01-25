@@ -104,7 +104,8 @@ export default class SquadServerFactory {
 
     if (type === 'discord') {
       const connector = new Discord.Client();
-      await connector.login(connectorConfig);
+      await connector.login(connectorConfig.token);
+      Logger.verbose('SquadServerFactory', 1, `Logged in to Discord as ${connector.user.tag}.`);
       return connector;
     }
 
