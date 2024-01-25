@@ -84,7 +84,6 @@ export default class DiscordAdminRequest extends DiscordBasePlugin {
 
   async mount() {
     this.server.on(`CHAT_COMMAND:${this.options.command}`, this.onChatCommand);
-    this.verbose(1, this.server.serverName);
   }
 
   async unmount() {
